@@ -50,7 +50,7 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
     is_active = models.BooleanField(
         _("active"),
         default=True,
-        hhelp_text=_("Required. 150 characters or fewer. ASCII letters and digits only."),
+        help_text=_("Required. 150 characters or fewer. ASCII letters and digits only."),
     )
     date_joined = models.DateTimeField(_("date joined"), auto_now_add=True)
 
